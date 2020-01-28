@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { useLocation, useParams } from 'react-router';
+import { useLocation } from 'react-router';
 import {
   IonIcon,
   IonLabel,
@@ -14,7 +14,6 @@ import NoTab from './pages/NoTab';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
-import Details from './pages/Details';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
