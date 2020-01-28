@@ -1,3 +1,4 @@
+import { useParams } from 'react-router';
 import {
   IonCard,
   IonCardContent,
@@ -20,11 +21,13 @@ import React from 'react';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
+  let { groupName } = useParams<{ groupName: string }>();
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab One</IonTitle>
+          <IonTitle>Tab One for {groupName}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
